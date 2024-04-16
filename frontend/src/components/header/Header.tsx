@@ -11,21 +11,36 @@ const HeaderContainer = styled.div`
 `;
 const LeftHeaderContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 `;
 
 const RightHeaderContainer = styled.div`
   display: flex;
 `;
 
-// const Icon = styled.img``;
+const DotIcon = styled.span`
+  width: 1.2em; /* Adjust the size of the dot */
+  height: 1.2em; /* Adjust the size of the dot */
+  background-color: blue;
+  border-radius: 90%;
+  display: inline-block;
+  position: relative;
+  transform: translate(0%, 20%);
+`;
+
+const IconContainer = styled.div`
+  margin-left: 10px;
+  margin-right: 10px;
+`;
 
 const NameContainer = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
 `;
 const TitleContainer = styled.div`
+  margin-left: 20px;
   font-size: 1rem;
+  align-self: flex-end;
 `;
 const ResumeContainer = styled.div`
   margin-left: 20px;
@@ -40,6 +55,9 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftHeaderContainer>
+        <IconContainer>
+          <DotIcon />
+        </IconContainer>
         <NameContainer>CCM</NameContainer>
         <TitleContainer>Data Analyst</TitleContainer>
       </LeftHeaderContainer>

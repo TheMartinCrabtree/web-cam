@@ -12,8 +12,8 @@ const ImageContainer = styled.div`
   margin-right: 20px;
 `;
 const StyledImage = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
 `;
@@ -30,7 +30,7 @@ const Profile = () => {
   return (
     <LayoutWrapper>
       <ImageContainer>
-        <StyledImage src="https://via.placeholder.com/150" alt="Profile" />
+        <StyledImage src="https://via.placeholder.com/250" alt="Profile" />
       </ImageContainer>
       <InfoContainer>
         <TitleContainer>CCM</TitleContainer>

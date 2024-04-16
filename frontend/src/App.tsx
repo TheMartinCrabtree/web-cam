@@ -20,7 +20,7 @@ const LayoutWrapper = styled.div`
 
 const BodyWrapper = styled.div`
   background-color: lightblue;
-  padding: 2em;
+  padding: 6em;
   min-height: 600px;
 `;
 
