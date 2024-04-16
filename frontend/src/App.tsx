@@ -4,6 +4,7 @@ import ReactGA from "react-ga4";
 import { InitOptions } from "react-ga4/types/ga4";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
+import Footer from "./components/footer/Footer";
 
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
@@ -12,16 +13,26 @@ import Profile from "./components/profile/Profile";
 const LayoutWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  min-height: 600px;
+  min-width: 960px;
   width: 80vw;
+  background-color: yellow;
+`;
+
+const BodyWrapper = styled.div`
+  background-color: lightblue;
+  padding: 2em;
+  min-height: 600px;
 `;
 
 function App() {
   return (
     <LayoutWrapper>
       <Header />
-      <Profile />
-      <div>footer</div>
+      <BodyWrapper>
+        <Profile />
+        <div>button bar</div>
+      </BodyWrapper>
+      <Footer />
     </LayoutWrapper>
   );
 }
