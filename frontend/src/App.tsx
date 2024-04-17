@@ -5,6 +5,7 @@ import { InitOptions } from "react-ga4/types/ga4";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
 import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
@@ -24,13 +25,19 @@ const BodyWrapper = styled.div`
   min-height: 600px;
 `;
 
+const NavbarWrapper = styled.div`
+  margin: 3em;
+`;
+
 function App() {
   return (
     <LayoutWrapper>
       <Header />
       <BodyWrapper>
         <Profile />
-        <div>button bar</div>
+        <NavbarWrapper>
+          <Navbar />
+        </NavbarWrapper>
       </BodyWrapper>
       <Footer />
     </LayoutWrapper>
