@@ -27,7 +27,9 @@ const LayoutWrapper = styled.div`
 `;
 
 const StyledButton = styled.button<{ buttonColor: string }>`
-  border: none;
+  border: 1px;
+  border-style: solid;
+  border-color: darkblue;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -38,9 +40,12 @@ const StyledButton = styled.button<{ buttonColor: string }>`
   justify-content: center;
   cursor: pointer;
   background-color: ${({ buttonColor }) =>
-    buttonColor
-      ? `background-color: ${buttonColor}`
-      : `background-color: lightgray`};
+    buttonColor ? `${buttonColor}` : `lightgray`};
+  transition: background-color 0.3s ease;
+  &:hover,
+  &:focus {
+    background-color: darkgray;
+  }
 `;
 
 const _renderButtons = (buttonArr: any[]) => {
