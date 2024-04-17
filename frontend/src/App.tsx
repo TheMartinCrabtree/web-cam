@@ -16,11 +16,9 @@ const LayoutWrapper = styled.div`
   margin-right: auto;
   min-width: 960px;
   width: 80vw;
-  background-color: yellow;
 `;
 
 const BodyWrapper = styled.div`
-  background-color: lightblue;
   padding: 6em;
   min-height: 600px;
 `;

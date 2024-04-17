@@ -5,8 +5,8 @@ const LayoutWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #edf3ff;
+  color: #919191;
   padding: 10px 20px;
 `;
 
@@ -14,8 +14,12 @@ const TextContainer = styled.div`
   flex: 1;
   text-align: center;
   a: {
-    color: #fff;
+    color: #919191;
     text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    color: darkgray;
   }
 `;
 

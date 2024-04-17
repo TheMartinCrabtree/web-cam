@@ -21,9 +21,10 @@ const buttonData = [
 ];
 
 const LayoutWrapper = styled.div`
+  padding-left: 7em;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 85%;
 `;
 
 const StyledButton = styled.button<{ buttonColor: string }>`

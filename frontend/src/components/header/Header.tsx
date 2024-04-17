@@ -5,8 +5,8 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #edf3ff;
+  color: #919191;
   padding: 10px 20px;
 `;
 const LeftHeaderContainer = styled.div`
@@ -45,10 +45,18 @@ const TitleContainer = styled.div`
 const ResumeContainer = styled.div`
   margin-left: 20px;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: darkgray;
+  }
 `;
 const ContactContainer = styled.div`
   margin-left: 20px;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: darkgray;
+  }
 `;
 
 const Header = () => {
