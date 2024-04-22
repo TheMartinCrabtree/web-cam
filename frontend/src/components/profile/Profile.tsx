@@ -9,11 +9,12 @@ const LayoutWrapper = styled.div`
 
 const ImageContainer = styled.div`
   flex: 0 0 auto;
-  margin-right: 20px;
+  margin-right: 2vw;
+  margin-left: 8vw;
 `;
 const StyledImage = styled.img`
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
 `;
@@ -30,7 +31,8 @@ const Profile = () => {
   return (
     <LayoutWrapper>
       <ImageContainer>
-        <StyledImage src="https://via.placeholder.com/250" alt="Profile" />
+        {/* <StyledImage src="https://via.placeholder.com/250" alt="Profile" /> */}
+        <StyledImage src="./headshot.jpg" alt="Profile" />
       </ImageContainer>
       <InfoContainer>
         <TitleContainer>CCM</TitleContainer>

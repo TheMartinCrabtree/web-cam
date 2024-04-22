@@ -6,15 +6,22 @@ const LayoutWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: #edf3ff;
-  color: #919191;
+  color: #585858;
   padding: 10px 20px;
+`;
+
+const StyledLine = styled.div`
+  width: 100%;
+  height: 2px;
+  background-color: #f1f0f0;
+  margin: 0 auto;
 `;
 
 const TextContainer = styled.div`
   flex: 1;
   text-align: center;
   a: {
-    color: #919191;
+    color: #585858;
     text-decoration: none;
   }
   &:hover,

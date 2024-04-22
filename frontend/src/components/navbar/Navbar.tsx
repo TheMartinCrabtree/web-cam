@@ -3,59 +3,66 @@ import styled from "styled-components";
 
 const buttonData = [
   {
-    buttonText: "Button 1",
+    id: "ButtonData-button1",
+    buttonText: "About Me",
     buttonColor: "lightblue",
   },
   {
-    buttonText: "Button 2",
+    id: "ButtonData-button2",
+    buttonText: "Resume",
     buttonColor: "lightgreen",
   },
   {
-    buttonText: "Button 3",
+    id: "ButtonData-button3",
+    buttonText: "Projects and Presentations",
     buttonColor: "lightgray",
   },
   {
-    buttonText: "Button 4",
+    id: "ButtonData-button4",
+    buttonText: "Contact me",
     buttonColor: "gold",
   },
 ];
 
 const LayoutWrapper = styled.div`
-  padding-left: 7em;
   display: flex;
   justify-content: space-between;
   width: 85%;
 `;
 
-const StyledButton = styled.button<{ buttonColor: string }>`
-  border: 1px;
+const StyledButton = styled.button<{ $buttonColor: string }>`
+  border: 2px;
   border-style: solid;
   border-color: darkblue;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   font-size: 16px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: ${({ buttonColor }) =>
-    buttonColor ? `${buttonColor}` : `lightgray`};
+  background-color: ${({ $buttonColor }) =>
+    $buttonColor ? `${$buttonColor}` : `lightgray`};
   transition: background-color 0.3s ease;
   &:hover,
   &:focus {
+    color: lightgray;
     background-color: darkgray;
+    border-color: lightgray;
   }
 `;
 
 const _renderButtons = (buttonArr: any[]) => {
   return buttonArr.map(
-    (btnData: { buttonText: string; buttonColor: string }) => {
-      const { buttonText, buttonColor } = btnData;
+    (btnData: { id: string; buttonText: string; buttonColor: string }) => {
+      const { id, buttonText, buttonColor } = btnData;
       return (
         buttonColor && (
-          <StyledButton buttonColor={buttonColor}>{buttonText}</StyledButton>
+          <StyledButton key={id} $buttonColor={buttonColor}>
+            {buttonText}
+          </StyledButton>
         )
       );
     }

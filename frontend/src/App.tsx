@@ -27,16 +27,25 @@ const NavbarWrapper = styled.div`
   margin: 3em;
 `;
 
+const StyledLine = styled.div`
+  width: 100%;
+  height: 2px;
+  background-color: #f1f0f0;
+  margin: 0 auto;
+`;
+
 function App() {
   return (
     <LayoutWrapper>
       <Header />
+      <StyledLine />
       <BodyWrapper>
         <Profile />
         <NavbarWrapper>
           <Navbar />
         </NavbarWrapper>
       </BodyWrapper>
+      <StyledLine />
       <Footer />
     </LayoutWrapper>
   );
