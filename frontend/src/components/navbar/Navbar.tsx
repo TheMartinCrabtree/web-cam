@@ -26,8 +26,9 @@ const buttonData = [
 
 const LayoutWrapper = styled.div`
   display: flex;
+  margin-left: auto;
   justify-content: space-between;
-  width: 85%;
+  width: 70%;
 `;
 
 const StyledButton = styled.button<{ $buttonColor: string }>`

@@ -24,7 +24,7 @@ const BodyWrapper = styled.div`
 `;
 
 const NavbarWrapper = styled.div`
-  margin: 3em;
+  padding: 3em 0;
 `;
 
 const StyledLine = styled.div`
