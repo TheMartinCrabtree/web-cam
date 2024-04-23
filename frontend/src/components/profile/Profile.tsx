@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Navbar from "../navbar/Navbar";
 
 const LayoutWrapper = styled.div`
   min-heaight: 540px;
@@ -31,12 +32,15 @@ const Profile = () => {
   return (
     <LayoutWrapper>
       <ImageContainer>
-        {/* <StyledImage src="https://via.placeholder.com/250" alt="Profile" /> */}
         <StyledImage src="./headshot.jpg" alt="Profile" />
       </ImageContainer>
       <InfoContainer>
-        <TitleContainer>CCM</TitleContainer>
-        <SubtitleContainer>Subtitle text</SubtitleContainer>
+        <TitleContainer>Camille Chaustre McNally</TitleContainer>
+        <SubtitleContainer>
+          Subtitle text: perhaps occupation and or credentials
+        </SubtitleContainer>
+        <Navbar />
+        <InfoText>Space for a basic bio or intro here.</InfoText>
         <InfoText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.

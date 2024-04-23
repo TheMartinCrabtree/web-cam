@@ -66,7 +66,7 @@ const Header = () => {
         <IconContainer>
           <DotIcon />
         </IconContainer>
-        <NameContainer>CCM</NameContainer>
+        <NameContainer>Camille Chaustre McNally</NameContainer>
         <TitleContainer>Data Analyst</TitleContainer>
       </LeftHeaderContainer>
       <RightHeaderContainer>

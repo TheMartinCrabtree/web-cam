@@ -7,7 +7,10 @@ const LayoutWrapper = styled.div`
   align-items: center;
   background-color: #edf3ff;
   color: #585858;
-  padding: 10px 20px;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: inherit;
 `;
 
 const StyledLine = styled.div`
@@ -34,16 +37,13 @@ const Footer = () => {
   return (
     <LayoutWrapper>
       <TextContainer>
-        <a href="mailto:your-email@example.com">Email</a>
+        <a href="mailto:wittyrepartee@gmail.com ">Email</a>
       </TextContainer>
       <TextContainer>
-        <a href="https://github.com/yourusername">GitHub</a>
+        <span>Linkedin?</span>
       </TextContainer>
       <TextContainer>
-        <span>Placeholder TBA</span>
-      </TextContainer>
-      <TextContainer>
-        <span>&copy; {new Date().getFullYear()} CCM</span>
+        <span>&copy; {new Date().getFullYear()} Camille Chaustre McNally</span>
       </TextContainer>
     </LayoutWrapper>
   );
