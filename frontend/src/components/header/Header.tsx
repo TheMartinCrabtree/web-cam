@@ -42,16 +42,8 @@ const TitleContainer = styled.div`
   font-size: 1rem;
   align-self: flex-end;
 `;
-const ResumeContainer = styled.div`
-  margin-left: 20px;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    color: darkgray;
-  }
-`;
-const ContactContainer = styled.div`
-  margin-left: 20px;
+const RightLinkContainer = styled.div`
+  margin: 0px 20px;
   cursor: pointer;
   &:hover,
   &:focus {
@@ -70,8 +62,8 @@ const Header = () => {
         <TitleContainer>Data Analyst</TitleContainer>
       </LeftHeaderContainer>
       <RightHeaderContainer>
-        <ResumeContainer>Resume</ResumeContainer>
-        <ContactContainer>Contact</ContactContainer>
+        <RightLinkContainer>Resume</RightLinkContainer>
+        <RightLinkContainer>Contact</RightLinkContainer>
       </RightHeaderContainer>
     </HeaderContainer>
   );

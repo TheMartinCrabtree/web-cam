@@ -9,9 +9,9 @@ const LayoutWrapper = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  align-self: flex-start;
   flex: 0 0 auto;
-  margin-right: 2vw;
-  margin-left: 8vw;
+  margin: 2em 2vw 8vw 0;
 `;
 const StyledImage = styled.img`
   width: 300px;
@@ -24,9 +24,20 @@ const InfoContainer = styled.div`
   flex: 1;
 `;
 
-const TitleContainer = styled.h2``;
-const SubtitleContainer = styled.h3``;
-const InfoText = styled.p``;
+const TitleContainer = styled.h2`
+  font-size: 2.5em;
+`;
+const SubtitleContainer = styled.h3`
+  font-size: 1.3em;
+`;
+const TextBlockHeading = styled.div`
+  color: darkgray;
+  font-size: 1.8em;
+  padding-top: 1em;
+`;
+const StyledParagraph = styled.p`
+  font-size: 1em;
+`;
 
 const Profile = () => {
   return (
@@ -40,13 +51,13 @@ const Profile = () => {
           Subtitle text: perhaps occupation and or credentials
         </SubtitleContainer>
         <Navbar />
-        <InfoText>Space for a basic bio or intro here.</InfoText>
-        <InfoText>
+        <TextBlockHeading>About Me</TextBlockHeading>
+        <StyledParagraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
           Mauris mattis mattis elit, non ultrices libero consequat in. Sed
           vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
-        </InfoText>
+        </StyledParagraph>
       </InfoContainer>
     </LayoutWrapper>
   );

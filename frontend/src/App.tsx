@@ -10,23 +10,37 @@ import Footer from "./components/footer/Footer";
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
 // ReactGA.initialize([]);
-const BackgroundLayer = styled.div`
+
+const AppWrapper = styled.div`
+  position: relative;
   width: 100vw;
   height: 100vh;
+`;
+const BackgroundLayer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url("./background.webp");
   background-size: cover;
+  background-position: center;
+  opacity: 0.1;
 `;
-const LayoutWrapper = styled.div`
+const ContentContainer = styled.div`
+  position: relative;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   min-width: 960px;
   height: 100%;
   width: 80vw;
+  min-width: 1080px;
   background: rgba(51, 98, 170, 0.3);
 `;
 
 const BodyWrapper = styled.div`
-  padding: 6em;
+  padding: 6em 8em 6em 6em;
   min-height: 600px;
 `;
 
@@ -43,8 +57,9 @@ const StyledLine = styled.div`
 
 function App() {
   return (
-    <BackgroundLayer>
-      <LayoutWrapper>
+    <AppWrapper>
+      <BackgroundLayer />
+      <ContentContainer>
         <Header />
         <StyledLine />
         <BodyWrapper>
@@ -54,8 +69,8 @@ function App() {
           </NavbarWrapper> */}
         </BodyWrapper>
         <Footer />
-      </LayoutWrapper>
-    </BackgroundLayer>
+      </ContentContainer>
+    </AppWrapper>
   );
 }
 
