@@ -13,7 +13,6 @@ import Footer from "./components/footer/Footer";
 
 const AppWrapper = styled.div`
   position: relative;
-  width: 100vw;
   height: 100vh;
 `;
 const BackgroundLayer = styled.div`

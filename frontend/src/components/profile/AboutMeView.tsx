@@ -5,7 +5,7 @@ import { TextBlockHeading, StyledParagraph } from "../utilities/styledfonts";
 const AboutMeView = () => {
   return (
     <>
-      <TextBlockHeading>About Me</TextBlockHeading>
+      <TextBlockHeading>ABOUT ME</TextBlockHeading>
       <StyledParagraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis
         velit ac magna volutpat, eget rhoncus tortor malesuada. Mauris mattis

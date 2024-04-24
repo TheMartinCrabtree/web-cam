@@ -5,7 +5,7 @@ import { TextBlockHeading, StyledParagraph } from "../utilities/styledfonts";
 const ProjectView = () => {
   return (
     <>
-      <TextBlockHeading>Project View</TextBlockHeading>
+      <TextBlockHeading>PROJECTS</TextBlockHeading>
       <StyledParagraph>Project View PP</StyledParagraph>
     </>
   );

@@ -45,7 +45,7 @@ const Footer = () => {
   return (
     <LayoutWrapper>
       <TextContainer>
-        <a href="mailto:wittyrepartee@gmail.com ">Email</a>
+        <a href="mailto:camille.c.mcnally@gmail.com ">Email</a>
       </TextContainer>
       <TextContainer>
         <a href="https://www.linkedin.com/in/camillechaustremcnally/">

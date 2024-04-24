@@ -18,7 +18,7 @@ const buttonData = [
   {
     id: "ButtonData-button3",
     viewType: "PROJECTS",
-    buttonText: "Projects and Presentations",
+    buttonText: "Projects",
     buttonColor: "lightgray",
   },
   {
@@ -30,6 +30,7 @@ const buttonData = [
 ];
 
 const LayoutWrapper = styled.div`
+  padding-top: 1em;
   display: flex;
   margin-left: auto;
   justify-content: space-between;

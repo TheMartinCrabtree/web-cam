@@ -62,8 +62,8 @@ const Header = () => {
         <TitleContainer>Data Analyst</TitleContainer>
       </LeftHeaderContainer>
       <RightHeaderContainer>
-        <RightLinkContainer>Resume</RightLinkContainer>
-        <RightLinkContainer>Contact</RightLinkContainer>
+        <RightLinkContainer>Brooklyn, New York</RightLinkContainer>
+        {/* <RightLinkContainer>Contact</RightLinkContainer> */}
       </RightHeaderContainer>
     </HeaderContainer>
   );

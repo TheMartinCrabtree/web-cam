@@ -69,7 +69,7 @@ const Profile = () => {
       <InfoContainer>
         <TitleContainer>Camille Chaustre McNally</TitleContainer>
         <SubtitleContainer>
-          Subtitle text: perhaps occupation and or credentials
+          DATA ANALYST | MASTERS OF PUBLIC HEALTH, EPIDEMIOLOGY
         </SubtitleContainer>
         <Navbar setActiveView={setActiveView} />
         {_renderActiveView()}
