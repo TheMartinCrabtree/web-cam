@@ -1,24 +1,29 @@
 import React from "react";
 import styled from "styled-components";
 
+const viewOptions = ["ABOUT", "CONTACT", "PROJECTS", "RESUME"];
 const buttonData = [
   {
     id: "ButtonData-button1",
+    viewType: "ABOUT",
     buttonText: "About Me",
     buttonColor: "lightblue",
   },
   {
     id: "ButtonData-button2",
+    viewType: "RESUME",
     buttonText: "Resume",
     buttonColor: "lightgreen",
   },
   {
     id: "ButtonData-button3",
+    viewType: "PROJECTS",
     buttonText: "Projects and Presentations",
     buttonColor: "lightgray",
   },
   {
     id: "ButtonData-button4",
+    viewType: "CONTACT",
     buttonText: "Contact me",
     buttonColor: "gold",
   },
@@ -54,13 +59,23 @@ const StyledButton = styled.button<{ $buttonColor: string }>`
   }
 `;
 
-const _renderButtons = (buttonArr: any[]) => {
+const _renderButtons = (buttonArr: any[], setActiveView: any) => {
   return buttonArr.map(
-    (btnData: { id: string; buttonText: string; buttonColor: string }) => {
-      const { id, buttonText, buttonColor } = btnData;
+    (btnData: {
+      id: string;
+      viewType: string;
+      buttonText: string;
+      buttonColor: string;
+    }) => {
+      const { id, viewType, buttonText, buttonColor } = btnData;
       return (
-        buttonColor && (
-          <StyledButton key={id} $buttonColor={buttonColor}>
+        buttonColor &&
+        viewType && (
+          <StyledButton
+            onClick={() => setActiveView(viewType)}
+            key={id}
+            $buttonColor={buttonColor}
+          >
             {buttonText}
           </StyledButton>
         )
@@ -69,9 +84,11 @@ const _renderButtons = (buttonArr: any[]) => {
   );
 };
 
-const Navbar = () => {
+const Navbar = (props: { setActiveView: any }) => {
   return (
-    <LayoutWrapper>{buttonData && _renderButtons(buttonData)}</LayoutWrapper>
+    <LayoutWrapper>
+      {buttonData && _renderButtons(buttonData, props.setActiveView)}
+    </LayoutWrapper>
   );
 };
 

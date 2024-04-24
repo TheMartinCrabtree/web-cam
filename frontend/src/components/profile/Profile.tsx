@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
 
@@ -39,7 +39,34 @@ const StyledParagraph = styled.p`
   font-size: 1em;
 `;
 
+const ViewContainer = styled.div``;
+
 const Profile = () => {
+  // ABOUT | CONTACT | PROJECTS | RESUME
+  const [activeView, setActiveView] = useState("ABOUT");
+
+  const _renderActiveView = () => {
+    console.log("activeView", activeView);
+
+    return (
+      <ViewContainer>
+        <TextBlockHeading>About Me</TextBlockHeading>
+        <StyledParagraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
+          Mauris mattis mattis elit, non ultrices libero consequat in. Sed
+          vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
+        </StyledParagraph>
+        <StyledParagraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
+          Mauris mattis mattis elit, non ultrices libero consequat in. Sed
+          vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
+        </StyledParagraph>
+      </ViewContainer>
+    );
+  };
+
   return (
     <LayoutWrapper>
       <ImageContainer>
@@ -50,14 +77,8 @@ const Profile = () => {
         <SubtitleContainer>
           Subtitle text: perhaps occupation and or credentials
         </SubtitleContainer>
-        <Navbar />
-        <TextBlockHeading>About Me</TextBlockHeading>
-        <StyledParagraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
-          Mauris mattis mattis elit, non ultrices libero consequat in. Sed
-          vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
-        </StyledParagraph>
+        <Navbar setActiveView={setActiveView} />
+        {_renderActiveView()}
       </InfoContainer>
     </LayoutWrapper>
   );
