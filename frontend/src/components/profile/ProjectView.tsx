@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { TextBlockHeading, StyledParagraph } from "../utilities/styledfonts";
 
 const ProjectView = () => {
-  return <div>ProjectView</div>;
+  return (
+    <>
+      <TextBlockHeading>Project View</TextBlockHeading>
+      <StyledParagraph>Project View PP</StyledParagraph>
+    </>
+  );
 };
 
 export default ProjectView;

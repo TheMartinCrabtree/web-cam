@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../navbar/Navbar";
+import AboutMeView from "./AboutMeView";
+import ResumeView from "./ResumeView";
+import ProjectView from "./ProjectView";
+import ContactsView from "./ContactsView";
 
 const LayoutWrapper = styled.div`
   min-heaight: 540px;
@@ -30,41 +34,31 @@ const TitleContainer = styled.h2`
 const SubtitleContainer = styled.h3`
   font-size: 1.3em;
 `;
-const TextBlockHeading = styled.div`
-  color: darkgray;
-  font-size: 1.8em;
-  padding-top: 1em;
-`;
-const StyledParagraph = styled.p`
-  font-size: 1em;
-`;
 
 const ViewContainer = styled.div``;
 
 const Profile = () => {
-  // ABOUT | CONTACT | PROJECTS | RESUME
+  // options are: ABOUT | CONTACT | PROJECTS | RESUME
   const [activeView, setActiveView] = useState("ABOUT");
 
   const _renderActiveView = () => {
     console.log("activeView", activeView);
 
-    return (
-      <ViewContainer>
-        <TextBlockHeading>About Me</TextBlockHeading>
-        <StyledParagraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
-          Mauris mattis mattis elit, non ultrices libero consequat in. Sed
-          vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
-        </StyledParagraph>
-        <StyledParagraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          venenatis velit ac magna volutpat, eget rhoncus tortor malesuada.
-          Mauris mattis mattis elit, non ultrices libero consequat in. Sed
-          vehicula justo et arcu scelerisque, sit amet rutrum ex fermentum.
-        </StyledParagraph>
-      </ViewContainer>
-    );
+    const _getActiveView = () => {
+      switch (activeView) {
+        case "CONTACT":
+          return <ContactsView />;
+        case "PROJECTS":
+          return <ProjectView />;
+        case "RESUME":
+          return <ResumeView />;
+        case "ABOUT":
+        default:
+          return <AboutMeView />;
+      }
+    };
+
+    return <ViewContainer>{_getActiveView()}</ViewContainer>;
   };
 
   return (
