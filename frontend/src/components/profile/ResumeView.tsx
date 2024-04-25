@@ -22,7 +22,7 @@ const SectionHeading = styled.span`
 
 const SectionSubHeading = styled.span`
   color: #636363;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 700;
 `;
 
@@ -40,9 +40,9 @@ const JobInfoItem = styled.p``;
 const EduContainer = styled.div``;
 
 const ResumeView = () => {
-  const _renderJobData = () => {
-    return <div></div>;
-  };
+  // const _renderJobData = () => {
+  //   return <div></div>;
+  // };
 
   return (
     <>

@@ -55,9 +55,9 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftHeaderContainer>
-        <IconContainer>
+        {/* <IconContainer>
           <DotIcon />
-        </IconContainer>
+        </IconContainer> */}
         <NameContainer>Camille Chaustre McNally</NameContainer>
         <TitleContainer>Data Analyst</TitleContainer>
       </LeftHeaderContainer>
