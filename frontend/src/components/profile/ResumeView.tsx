@@ -227,25 +227,75 @@ const ResumeView = () => {
         </JobInfoContainer>
       </JobContainer>
       <StyledHR />
-      <div>
-        NYU School of Medicine | New York, NY | Research Data Analyst        
-        May 2017 - April 2018 CHES/ECHO Prenatal Biobank Study: Worked in a
-        large team to collect data on the effects of environmental exposures
-        during pregnancy and outcomes in pregnancy and early childhood,
-        recruiting and collecting survey data and biological samples from
-        patients at many timepoints during pregnancy. Used SAS to parse
-        Quadramed schedules, identifying patients within the first trimester of
-        pregnancy for potential enrollment in research. Janssen Pharmaceutical |
-        Raritan , NJ | Global Market Access Intern         May 2016 - August
-        2016 Projects: Worked on budget Impact Analysis Platform, calculating
-        drug regimen costs and creating a standardized report for the
-        introduction of a new HIV drug into the Mexican Market. Also created an
-        international repository for regulations concerning the dissemination of
-        patient reported outcome data to the public in 15 large Janssen markets.
-        NYU Langone Medical Center |New York , NY |  Research Assistant/Lab
-        Manager September 2010 - August 2012 Roles: Assisted postdocs with
-        experiments and data collection, lab management, project coordination.
-      </div>
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>
+            NYU School of Medicine | New York, NY
+          </SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>Research Data Analyst May 2017 - April 2018</BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>CHES/ECHO Prenatal Biobank Study: </BoldText>Worked in a
+            large team to collect data on the effects of environmental exposures
+            during pregnancy and outcomes in pregnancy and early childhood,
+            recruiting and collecting survey data and biological samples from
+            patients at many timepoints during pregnancy. Used SAS to parse
+            Quadramed schedules, identifying patients within the first trimester
+            of pregnancy for potential enrollment in research.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
+      <StyledHR />
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>
+            Janssen Pharmaceutical | Raritan , NJ
+          </SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>
+              Global Market Access Intern May 2016 - August 2016
+            </BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>Projects: </BoldText>Worked on budget Impact Analysis
+            Platform, calculating drug regimen costs and creating a standardized
+            report for the introduction of a new HIV drug into the Mexican
+            Market. Also created an international repository for regulations
+            concerning the dissemination of patient reported outcome data to the
+            public in 15 large Janssen markets.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
+      <StyledHR />
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>
+            NYU Langone Medical Center |New York , NY
+          </SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>
+              Research Assistant/Lab Manager September 2010 - August 2012
+            </BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>Roles: </BoldText>Assisted postdocs with experiments and
+            data collection, lab management, project coordination.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
       <StyledHR />
       <EduContainer>
         <SectionSubHeading>EDUCATION</SectionSubHeading>
