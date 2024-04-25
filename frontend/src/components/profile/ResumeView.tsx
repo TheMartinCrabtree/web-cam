@@ -65,10 +65,10 @@ const ResumeView = () => {
         </span>
       </p>
       <StyledHR />
+      <p>
+        <SectionHeading>WORK EXPERIENCE</SectionHeading>
+      </p>
       <JobContainer>
-        <p>
-          <SectionHeading>WORK EXPERIENCE</SectionHeading>
-        </p>
         <JobHeadingContainer>
           <SectionSubHeading>
             Centene Health Net Federal Services Team | Fully Remote | Health
@@ -113,6 +113,140 @@ const ResumeView = () => {
           </JobInfoItem>
         </JobInfoContainer>
       </JobContainer>
+      <StyledHR />
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>
+            NYC Health and Hospitals | New York, NY
+          </SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>
+              Senior Analyst, Special Populations May 2022 - Oct 2022
+            </BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>Special Populations Project: </BoldText>Used SAS and mySQL
+            to create datasets that were visualized in Tableau dashboards.
+            Created presentations that will be used to estimate the needs of
+            homeless patients that will be enrolled in the new H+H program.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
+      <StyledHR />
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>NYC DOHMH BHHS | New York, NY</SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>HIV Death Team Lead April 2018 - May 2022</BoldText>
+          </JobDatesItem>
+          <JobDatesItem>
+            <BoldText>
+              HIV Surveillance Analyst April 2018 - March 2020
+            </BoldText>
+          </JobDatesItem>
+          <JobDatesItem>
+            <BoldText>
+              HIV Surveillance Death Data Analyst March 2020 - March 2022
+            </BoldText>
+          </JobDatesItem>
+          <JobDatesItem>
+            <BoldText>
+              HIV Surveillance Death Team Lead March 2022 - May 2022
+            </BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>Routine Work: </BoldText> Used SAS programming, including
+            data steps and proc SQL commands, for data cleaning, checking,
+            analysis and visualization for BHHS, including the production of
+            annual reports, geographic coding of all incident cases of HIV or
+            AIDS to CDC, and reporting internal productivity statistics as
+            quality control measures. Leading death surveillance for HIV, and
+            supervising death ascertainment, field investigation and death
+            metrics for deaths among people living with HIV, and cause of death
+            dataset freeze programs.
+          </JobInfoItem>
+          <JobInfoItem>
+            <BoldText>Measles Outbreak Response: </BoldText>Worked as sole data
+            analyst/SAS programmer, creating programs and workflows used to
+            identify and contact individuals not in compliance with measles
+            vaccination requirements during state of emergency.
+          </JobInfoItem>
+          <JobInfoItem>
+            <BoldText>COVID-19 Outbreak Response: </BoldText>Worked with the NYC
+            DOHMH Integrated Data Team to monitor and report on PPE status among
+            healthcare providers, including nursing homes and other congregant
+            living facilities. Created and evaluated an imputation method to
+            estimate hospital population demographics using geographical data,
+            which was used for PPE and vaccine allocation algorithms. Led
+            vaccine distribution hub as second in command, managing
+            communications between vaccine distribution site and DOHMH
+            headquarters. Was awarded a Distinguished Service Award for work
+            done in 2020.
+          </JobInfoItem>
+          <JobInfoItem>
+            <BoldText>Independent Projects: </BoldText>Research into the HIV
+            epidemic within Asian and Pacific Islander (API) ethnicities and
+            nationalities and working on methodology to use geography of
+            residence and name lists to impute/disaggregate API subgroups among
+            US born Asian-Americans.
+          </JobInfoItem>
+          <JobInfoItem>
+            <BoldText>Immigrant Health Liaison: </BoldText>In charge of
+            summarizing and presenting surveillance data on HIV in immigrant
+            populations in NYC both internally and externally. Created a new
+            page in the HIV annual report, reporting on HIV diagnoses among
+            people born outside the United States.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
+      <StyledHR />
+      <JobContainer>
+        <JobHeadingContainer>
+          <SectionSubHeading>College Board | New York, NY </SectionSubHeading>
+        </JobHeadingContainer>
+        <JobDatesContainer>
+          <JobDatesItem>
+            <BoldText>
+              Freelance Science Writer March 2018 - September 2020
+            </BoldText>
+          </JobDatesItem>
+        </JobDatesContainer>
+        <JobInfoContainer>
+          <JobInfoItem>
+            <BoldText>Freelance Writing: </BoldText>Found articles, and wrote
+            short summary passages for use in AP Biology Exam.
+          </JobInfoItem>
+        </JobInfoContainer>
+      </JobContainer>
+      <StyledHR />
+      <div>
+        NYU School of Medicine | New York, NY | Research Data Analyst        
+        May 2017 - April 2018 CHES/ECHO Prenatal Biobank Study: Worked in a
+        large team to collect data on the effects of environmental exposures
+        during pregnancy and outcomes in pregnancy and early childhood,
+        recruiting and collecting survey data and biological samples from
+        patients at many timepoints during pregnancy. Used SAS to parse
+        Quadramed schedules, identifying patients within the first trimester of
+        pregnancy for potential enrollment in research. Janssen Pharmaceutical |
+        Raritan , NJ | Global Market Access Intern         May 2016 - August
+        2016 Projects: Worked on budget Impact Analysis Platform, calculating
+        drug regimen costs and creating a standardized report for the
+        introduction of a new HIV drug into the Mexican Market. Also created an
+        international repository for regulations concerning the dissemination of
+        patient reported outcome data to the public in 15 large Janssen markets.
+        NYU Langone Medical Center |New York , NY |  Research Assistant/Lab
+        Manager September 2010 - August 2012 Roles: Assisted postdocs with
+        experiments and data collection, lab management, project coordination.
+      </div>
+      <StyledHR />
       <EduContainer>
         <SectionSubHeading>EDUCATION</SectionSubHeading>
         <p>
