@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { TextBlockHeading, StyledParagraph } from "../utilities/styledfonts";
+import {
+  TextBlockHeading,
+  StyledParagraph,
+  BoldText,
+  SectionSubHeading,
+} from "../utilities/styledfonts";
 
 const StyledHR = styled.hr`
   display: block;
@@ -17,17 +22,6 @@ const StyledHR = styled.hr`
 
 const SectionHeading = styled.span`
   font-size: 1.3em;
-  font-weight: 700;
-`;
-
-const SectionSubHeading = styled.span`
-  color: #636363;
-  font-size: 1.2em;
-  font-weight: 700;
-`;
-
-const BoldText = styled.span`
-  font-size: 1em;
   font-weight: 700;
 `;
 
