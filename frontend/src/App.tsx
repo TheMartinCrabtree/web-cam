@@ -5,7 +5,6 @@ import { InitOptions } from "react-ga4/types/ga4";
 import Header from "./components/header/Header";
 import Profile from "./components/profile/Profile";
 import Footer from "./components/footer/Footer";
-// import Navbar from "./components/navbar/Navbar";
 
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
@@ -15,11 +14,13 @@ const AppWrapper = styled.div`
   position: relative;
   height: 100vh;
 `;
+
+// width temp set to 1080px until viewport adaption
 const BackgroundLayer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 1080px;
   height: 100%;
   background: url("./background.webp");
   background-size: cover;

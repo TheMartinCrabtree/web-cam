@@ -68,9 +68,7 @@ const Profile = () => {
       </ImageContainer>
       <InfoContainer>
         <TitleContainer>Camille Chaustre McNally</TitleContainer>
-        <SubtitleContainer>
-          DATA ANALYST | MASTERS OF PUBLIC HEALTH, EPIDEMIOLOGY
-        </SubtitleContainer>
+        <SubtitleContainer>DATA ANALYST | MPH, EPIDEMIOLOGY</SubtitleContainer>
         <Navbar setActiveView={setActiveView} />
         {_renderActiveView()}
       </InfoContainer>
