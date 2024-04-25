@@ -21,6 +21,7 @@ const BackgroundLayer = styled.div`
   top: 0;
   left: 0;
   min-width: 1080px;
+  width: 100%;
   height: 100%;
   background: url("./background.webp");
   background-size: cover;
