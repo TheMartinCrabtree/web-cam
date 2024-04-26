@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { SectionTitle, StyledParagraph } from "../utilities/styledfonts";
+import {
+  SectionTitle,
+  StyledParagraph,
+  StyledHR,
+} from "../utilities/styledfonts";
 
 const AboutMeView = () => {
   return (
     <>
       <SectionTitle>ABOUT ME</SectionTitle>
+      <StyledHR />
       <StyledParagraph>
         My name is Camille Chaustre McNally, I’m a healthcare data analyst based
         in Brooklyn. With expertise in SAS, SQL, Tableau, Power BI, and ArcGIS,

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {
+  StyledHR,
   SectionTitle,
   StyledParagraph,
   BoldText,
@@ -40,6 +41,7 @@ const ProjectView = () => {
   return (
     <>
       <SectionTitle>PROJECTS</SectionTitle>
+      <StyledHR />
       <ProjectContainer>
         <ProjectItem>
           <ImageContainer>

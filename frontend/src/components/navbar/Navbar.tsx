@@ -36,6 +36,7 @@ const LayoutWrapper = styled.div`
   justify-content: space-between;
   @media (max-width: 720px) {
     padding: 0.25em 0;
+    gap: 4px;
   }
 `;
 
