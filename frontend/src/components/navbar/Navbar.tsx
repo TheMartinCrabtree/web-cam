@@ -67,30 +67,6 @@ const StyledButton = styled.button<{ $buttonColor: string }>`
   }
 `;
 
-// const StyledButton = styled.button<{ $buttonColor: string }>`
-//   border: 2px;
-//   border-style: solid;
-//   border-color: darkblue;
-//   border-radius: 50%;
-//   width: 125px;
-//   height: 125px;
-//   font-size: 16px;
-//   font-weight: bold;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   cursor: pointer;
-//   background-color: ${({ $buttonColor }) =>
-//     $buttonColor ? `${$buttonColor}` : `lightgray`};
-//   transition: background-color 0.3s ease;
-//   &:hover,
-//   &:focus {
-//     color: lightgray;
-//     background-color: darkgray;
-//     border-color: lightgray;
-//   }
-// `;
-
 const _renderButtons = (buttonArr: any[], setActiveView: any) => {
   return buttonArr.map(
     (btnData: {
