@@ -11,7 +11,7 @@ const LayoutWrapper = styled.div`
   position: fixed;
   bottom: 0;
   width: inherit;
-  min-width: 1080px;
+  min-width: 360px;
 `;
 
 const StyledLine = styled.div`

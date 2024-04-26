@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const TextBlockHeading = styled.div`
+const SectionTitle = styled.div`
   color: #636363;
   font-size: 1.8em;
   font-weight: 600;
@@ -10,6 +10,11 @@ const TextBlockHeading = styled.div`
 
 const StyledParagraph = styled.p`
   font-size: 1em;
+`;
+
+const SectionHeading = styled.span`
+  font-size: 1.3em;
+  font-weight: 700;
 `;
 
 const SectionSubHeading = styled.span`
@@ -23,4 +28,10 @@ const BoldText = styled.span`
   font-weight: 700;
 `;
 
-export { TextBlockHeading, StyledParagraph, BoldText, SectionSubHeading };
+export {
+  SectionTitle,
+  StyledParagraph,
+  BoldText,
+  SectionHeading,
+  SectionSubHeading,
+};

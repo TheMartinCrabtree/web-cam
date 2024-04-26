@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  TextBlockHeading,
+  SectionTitle,
   StyledParagraph,
   BoldText,
+  SectionHeading,
   SectionSubHeading,
 } from "../utilities/styledfonts";
 
@@ -18,11 +19,6 @@ const StyledHR = styled.hr`
   border-style: inset;
   border-width: 1px;
   background-color: black;
-`;
-
-const SectionHeading = styled.span`
-  font-size: 1.3em;
-  font-weight: 700;
 `;
 
 const JobContainer = styled.div``;
@@ -40,7 +36,7 @@ const ResumeView = () => {
 
   return (
     <>
-      <TextBlockHeading>RESUME</TextBlockHeading>
+      <SectionTitle>RESUME</SectionTitle>
 
       <StyledHR />
       <p>

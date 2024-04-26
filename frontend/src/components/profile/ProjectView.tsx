@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {
-  TextBlockHeading,
+  SectionTitle,
   StyledParagraph,
   BoldText,
   SectionSubHeading,
@@ -39,7 +39,7 @@ const ProjectItem = styled.div`
 const ProjectView = () => {
   return (
     <>
-      <TextBlockHeading>PROJECTS</TextBlockHeading>
+      <SectionTitle>PROJECTS</SectionTitle>
       <ProjectContainer>
         <ProjectItem>
           <ImageContainer>

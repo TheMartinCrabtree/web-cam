@@ -15,12 +15,11 @@ const AppWrapper = styled.div`
   height: 100vh;
 `;
 
-// width temp set to 1080px until viewport adaption
 const BackgroundLayer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 1080px;
+  min-width: 360px;
   width: 100%;
   height: 100%;
   background: url("./background.webp");
@@ -35,17 +34,16 @@ const ContentContainer = styled.div`
   margin-right: auto;
   min-height: 100%;
   width: 80vw;
-  min-width: 1080px;
+  min-width: 360px;
   background: rgba(51, 98, 170, 0.3);
 `;
 
 const BodyWrapper = styled.div`
   padding: 6em 8em 6em 6em;
   min-height: 600px;
-`;
-
-const NavbarWrapper = styled.div`
-  padding: 3em 0;
+  @media (max-width: 1080px) {
+    padding: 1em 2em 1em 1em;
+  }
 `;
 
 const StyledLine = styled.div`
@@ -64,9 +62,6 @@ function App() {
         <StyledLine />
         <BodyWrapper>
           <Profile />
-          {/* <NavbarWrapper>
-            <Navbar />
-          </NavbarWrapper> */}
         </BodyWrapper>
         <Footer />
       </ContentContainer>

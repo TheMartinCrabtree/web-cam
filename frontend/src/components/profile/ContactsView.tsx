@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { TextBlockHeading, StyledParagraph } from "../utilities/styledfonts";
+import { SectionTitle, StyledParagraph } from "../utilities/styledfonts";
 
 const ContactsView = () => {
   return (
     <>
-      <TextBlockHeading>CONTACT ME</TextBlockHeading>
+      <SectionTitle>CONTACT ME</SectionTitle>
       <StyledParagraph>
         Email:{" "}
         <a href="mailto:camille.c.mcnally@gmail.com ">
