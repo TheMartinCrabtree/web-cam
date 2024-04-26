@@ -70,8 +70,6 @@ const Profile = () => {
   const [activeView, setActiveView] = useState("ABOUT");
 
   const _renderActiveView = () => {
-    console.log("activeView", activeView);
-
     const _getActiveView = () => {
       switch (activeView) {
         case "CONTACT":
@@ -97,7 +95,7 @@ const Profile = () => {
       <InfoContainer>
         <TitleContainer>Camille Chaustre McNally</TitleContainer>
         <SubtitleContainer>DATA ANALYST | MPH, EPIDEMIOLOGY</SubtitleContainer>
-        {/* <Navbar setActiveView={setActiveView} /> */}
+        <Navbar setActiveView={setActiveView} />
         {_renderActiveView()}
       </InfoContainer>
     </LayoutWrapper>

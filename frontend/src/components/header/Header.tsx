@@ -4,7 +4,6 @@ import styled from "styled-components";
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #edf3ff;
   color: #585858;
   padding: 10px 20px;
@@ -16,6 +15,7 @@ const LeftHeaderContainer = styled.div`
 
 const RightHeaderContainer = styled.div`
   display: flex;
+  align-items: flex-end;
 `;
 
 const DotIcon = styled.span`
@@ -36,18 +36,31 @@ const IconContainer = styled.div`
 const NameContainer = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
+  @media (max-width: 1080px) {
+    font-size: 1em;
+  }
+  @media (max-width: 720px) {
+    font-size: 0.6em;
+  }
 `;
-const TitleContainer = styled.div`
+const OccupationContainer = styled.div`
   margin-left: 20px;
-  font-size: 1rem;
+  font-size: 1em;
   align-self: flex-end;
+  @media (max-width: 1080px) {
+    font-size: 0.8em;
+  }
+  @media (max-width: 720px) {
+    font-size: 0.5em;
+  }
 `;
 const RightLinkContainer = styled.div`
-  margin: 0px 20px;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    color: darkgray;
+  margin-right: 20px;
+  @media (max-width: 1080px) {
+    font-size: 0.8em;
+  }
+  @media (max-width: 720px) {
+    font-size: 0.5em;
   }
 `;
 
@@ -55,15 +68,11 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LeftHeaderContainer>
-        {/* <IconContainer>
-          <DotIcon />
-        </IconContainer> */}
         <NameContainer>Camille Chaustre McNally</NameContainer>
-        <TitleContainer>Data Analyst</TitleContainer>
+        <OccupationContainer>Data Analyst</OccupationContainer>
       </LeftHeaderContainer>
       <RightHeaderContainer>
         <RightLinkContainer>Brooklyn, New York</RightLinkContainer>
-        {/* <RightLinkContainer>Contact</RightLinkContainer> */}
       </RightHeaderContainer>
     </HeaderContainer>
   );
