@@ -39,7 +39,7 @@ const ContentContainer = styled.div`
 `;
 
 const BodyWrapper = styled.div`
-  padding: 6em 8em 6em 6em;
+  padding: 4vh 5vw 4vh 4vw;
   min-height: 600px;
   @media (max-width: 1080px) {
     padding: 1em 2em 1em 1em;

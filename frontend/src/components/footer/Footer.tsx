@@ -32,13 +32,26 @@ const TextContainer = styled.div`
   &:focus {
     color: darkgray;
   }
+  @media (max-width: 1080px) {
+    font-size: 0.8em;
+  }
 `;
 
 const StyledSVG = styled.svg`
   viewbox: 0 0 24 24;
   fill: currentColor;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
+`;
+
+const CopyText = styled.span`
+  font-size: 0.8em;
+  @media (max-width: 1080px) {
+    font-size: 0.5em;
+  }
+  @media (max-width: 720px) {
+    font-size: 0.3em;
+  }
 `;
 
 const Footer = () => {
@@ -60,7 +73,9 @@ const Footer = () => {
         </a>
       </TextContainer>
       <TextContainer>
-        <span>&copy; {new Date().getFullYear()} Camille Chaustre McNally</span>
+        <CopyText>
+          &copy; {new Date().getFullYear()} Camille Chaustre McNally
+        </CopyText>
       </TextContainer>
     </LayoutWrapper>
   );

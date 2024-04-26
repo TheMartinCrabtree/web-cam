@@ -24,6 +24,10 @@ const ImageContainer = styled.div`
   @media (max-width: 1080px) {
     margin: 1em 1em 1em 0;
   }
+  @media (max-width: 720px) {
+    margin: 0 0 0 0;
+    align-self: center;
+  }
 `;
 const StyledImage = styled.img`
   max-width: 300px;
@@ -43,11 +47,19 @@ const TitleContainer = styled.h2`
   @media (max-width: 1080px) {
     font-size: 3.5vw;
   }
+  @media (max-width: 720px) {
+    font-size: 4.5vw;
+    text-align: center;
+  }
 `;
 const SubtitleContainer = styled.h3`
   font-size: 1.3em;
   @media (max-width: 1080px) {
     font-size: 2.5vw;
+  }
+  @media (max-width: 720px) {
+    font-size: 3vw;
+    text-align: center;
   }
 `;
 
