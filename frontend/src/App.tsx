@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ReactGA from "react-ga4";
 import { InitOptions } from "react-ga4/types/ga4";
@@ -7,8 +7,14 @@ import Profile from "./components/profile/Profile";
 import Footer from "./components/footer/Footer";
 
 // using https://www.npmjs.com/package/react-ga4
-// array of tracker data objects
-// ReactGA.initialize([]);
+const gaID = process.env.REACT_APP_REACTGA_KEY;
+ReactGA.initialize([
+  {
+    trackingId: gaID ? gaID : "",
+    // gaOptions: {...},
+    // gtagOptions: {...},
+  },
+]);
 
 /*
 ReactGA.initialize([
