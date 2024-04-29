@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
 // ReactGA.initialize([]);
+console.log("testing key", process.env.REACT_APP_REACTGA_KEY);
 
 const AppWrapper = styled.div`
   position: relative;
