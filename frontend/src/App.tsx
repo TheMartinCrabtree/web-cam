@@ -9,6 +9,32 @@ import Footer from "./components/footer/Footer";
 // using https://www.npmjs.com/package/react-ga4
 // array of tracker data objects
 // ReactGA.initialize([]);
+
+/*
+ReactGA.initialize([
+  {
+    trackingId: "your GA measurement id",
+    gaOptions: {...}, // optional
+    gtagOptions: {...}, // optional
+  },
+  {
+    trackingId: "your second GA measurement id",
+  },
+]);
+
+// Send pageview with a custom path
+ReactGA.send({ hitType: "pageview", page: "/my-path", title: "Custom Title" });
+
+// Send a custom event
+ReactGA.event({
+  category: "your category",
+  action: "your action",
+  label: "your label", // optional
+  value: 99, // optional, must be a number
+  nonInteraction: true, // optional, true/false
+  transport: "xhr", // optional, beacon/xhr/image
+});
+*/
 console.log("testing key", process.env.REACT_APP_REACTGA_KEY);
 
 const AppWrapper = styled.div`
