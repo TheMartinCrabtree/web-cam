@@ -8,13 +8,7 @@ import Footer from "./components/footer/Footer";
 
 // using https://www.npmjs.com/package/react-ga4
 const gaID = process.env.REACT_APP_REACTGA_KEY;
-ReactGA.initialize([
-  {
-    trackingId: gaID ? gaID : "",
-    // gaOptions: {...},
-    // gtagOptions: {...},
-  },
-]);
+ReactGA.initialize(gaID ? gaID : "");
 
 /*
 ReactGA.initialize([

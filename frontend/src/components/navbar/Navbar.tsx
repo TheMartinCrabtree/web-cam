@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import ReactGA from "react-ga4";
 
 const viewOptions = ["ABOUT", "CONTACT", "PROJECTS", "RESUME"];
 const buttonData = [
@@ -94,6 +95,8 @@ const _renderButtons = (buttonArr: any[], setActiveView: any) => {
 };
 
 const Navbar = (props: { setActiveView: any }) => {
+  useEffect(() => {}, []);
+
   return (
     <LayoutWrapper>
       {buttonData && _renderButtons(buttonData, props.setActiveView)}
